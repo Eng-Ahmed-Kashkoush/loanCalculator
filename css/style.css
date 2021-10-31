@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #444;
+}
+
+body .container {
+  padding: 2rem;
+  height: auto;
+  background: #fff;
+  width: 85%;
+}
+
+body .container h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+body .container .input-item, body .container .result-item {
+  margin: 1rem 0;
+  width: 100%;
+  display: grid;
+}
+
+body .container .input-item .form-control, body .container .result-item .form-control {
+  background: #fff !important;
+  width: 100%;
+}
+
+body .container .input-item span.before-item, body .container .input-item .form-control, body .container .result-item span.before-item, body .container .result-item .form-control {
+  background: #E9Ecef;
+  padding: .5rem;
+  border: 1px solid #c5c1c1;
+}
+
+body .container .input-item {
+  grid-template-columns: .5fr 5fr;
+}
+
+body .container #yearly-repay {
+  padding: .5rem;
+  width: 100%;
+  border: 1px solid #c5c1c1;
+}
+
+body .container .result-item {
+  grid-template-columns: .9fr 2fr;
+}
+
+body .container .result-item .form-control {
+  background: #E9Ecef !important;
+}
+
+body .container .btn {
+  margin: 1rem 0;
+  padding: .5rem;
+  background: #333;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+
+body .container .btn .calc {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+body .container .btn:hover {
+  background: #444;
+}
+
+body .container .results {
+  padding: 1rem;
+}
+
+body .container .results h5 {
+  font-size: 20px;
+  color: #555;
+}
+
+.alert {
+  color: red;
+  padding: .5rem 0;
+  display: block;
+  background-color: #ffdbdb;
+  border: 1px solid #f8cece;
+}
+
+#loading, #ressult {
+  display: none;
+}
